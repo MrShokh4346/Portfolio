@@ -1,7 +1,6 @@
 /* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
@@ -23,10 +22,11 @@ const greeting = {
   username: "Shohrux Abdurasulov",
   title: "Hi all, I'm Shohrux",
   subTitle: emoji(
-    "A passionate Backend Software Developer 🚀 with experience in building scalable and efficient web applications using Python, FastAPI, Django, Flask, PostgreSQL, MySQL, and containerization tools like Docker. Currently learning C# and .NET to expand my backend expertise."
+    // "A passionate Backend Software Developer 🚀 with experience in building scalable and efficient web applications using Python, FastAPI, Django, Flask, PostgreSQL, MySQL, and containerization tools like Docker. Currently learning C# and .NET to expand my backend expertise."
+    "2+ years of hands-on experience building and deploying scalable Python backend platforms (FastAPI, Flask, Django) on Linux servers. Proven expertise in containerization (Docker), CI/CD (GitHub Actions), infrastructure-as-code, and currently mastering Kubernetes. Seeking to transition fully into DevOps while continuing to deliver reliable, high-availability systems."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/11JPngSMOIrnYYQNutMWotdxPq1YhZ_WduK3LnLIduPY/edit?tab=t.0", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1XsFMIcjLER3mnjMVHlhY1AClkkOvNvbah2xA042gYuw/edit?pli=1&tab=t.0", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/MrShokh4346",
-  // linkedin: "https://www.linkedin.com/in/saadpasta/",
+  linkedin: "https://www.linkedin.com/in/shokhrux-abdurasulov-016411391",
   gmail: "shokhruxabdurasulov0@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/share/p/1EDf7Fmztd/",
@@ -52,78 +52,87 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DevOps Engineer transitioning from Python Backend Development",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive and responsive application interfaces for web and mobile applications"
-    ),
+    emoji("⚡ Develop highly interactive and responsive application interfaces for web and mobile applications"),
     emoji("⚡ Build Progressive Web Applications (PWAs) using both traditional and Single Page Application (SPA) stacks"),
-    emoji(
-      "⚡ Integrate third-party services such as AWS, Hetzner and DigitalOcean"
-    )
+    emoji("⚡ Integrate third-party services such as AWS, Hetzner and DigitalOcean"),
+    emoji("⚡ Design and deploy  production-grade microservices using Docker + Docker Compose; reduced deployment time from 2 hours to <10 minutes via GitHub Actions pipelines"),
+    emoji("⚡ Manage full lifecycle: from requirements → code → CI/CD → production")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    // {
-    //   skillName: "html-5",
-    //   fontAwesomeClassname: "fab fa-html5"
-    // },
-    // {
-    //   skillName: "css3",
-    //   fontAwesomeClassname: "fab fa-css3-alt"
-    // },
-    // {
-    //   skillName: "sass",
-    //   fontAwesomeClassname: "fab fa-sass"
-    // },
-    // {
-    //   skillName: "JavaScript",
-    //   fontAwesomeClassname: "fab fa-js"
-    // },
-    // {
-    //   skillName: "reactjs",
-    //   fontAwesomeClassname: "fab fa-react"
-    // },
-    // {
-    //   skillName: "nodejs",
-    //   fontAwesomeClassname: "fab fa-node"
-    // },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift"
-    // },
-    // {
-    //   skillName: "npm",
-    //   fontAwesomeClassname: "fab fa-npm"
-    // },
+    // ---- Existing (now with color) ----
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-database",
+      style: { color: "#00758f" } // Dark blue
     },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws"
-    // },
-    // {
-    //   skillName: "Flask",
-    //   iconifyClass: "flask-icon", // custom class
-    //   logo: require("./assets/images/flask-svgrepo-com.svg")
-    // },
-    // {
-    //   skillName: "FastAPI",
-    //   fontAwesomeClassname: "fas fa-circle-bolt"
-    // },
     {
       skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fab fa-python",
+      style: { color: "#3776AB" } // Official Python blue
     },
     {
       skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      fontAwesomeClassname: "fab fa-docker",
+      style: { color: "#2496ED" } // Docker blue
+    },
+
+    // ---- DevOps (Iconify) ----
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt",
+      style: { color: "#F05032" } // Git red-orange
+    },
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github",
+      style: { color: "#181717" } // GitHub black
+    },
+    {
+      skillName: "Kubernetes",
+      iconifyClass: "simple-icons:kubernetes",
+      style: { color: "#326CE5" }
+    },
+    // {
+    //   skillName: "Jenkins",
+    //   iconifyClass: "simple-icons:jenkins",
+    //   style: { color: "#D24939" }
+    // },
+    // {
+    //   skillName: "Terraform",
+    //   iconifyClass: "simple-icons:terraform",
+    //   style: { color: "#7B42BC" }
+    // },
+    // {
+    //   skillName: "Ansible",
+    //   iconifyClass: "simple-icons:ansible",
+    //   style: { color: "#EE0000" }
+    // },
+    // {
+    //   skillName: "Prometheus",
+    //   iconifyClass: "simple-icons:prometheus",
+    //   style: { color: "#E6522C" }
+    // },
+    // {
+    //   skillName: "Grafana",
+    //   iconifyClass: "simple-icons:grafana",
+    //   style: { color: "#F46800" }
+    // },
+    // {
+    //   skillName: "Azure",
+    //   iconifyClass: "simple-icons:microsoftazure",
+    //   style: { color: "#0078D4" }
+    // },
+    // {
+    //   skillName: "Google Cloud",
+    //   iconifyClass: "simple-icons:googlecloud",
+    //   style: { color: "#4285F4" }
+    // },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -133,6 +142,17 @@ https://fontawesome.com/icons?d=gallery */
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
+    {
+      schoolName: "Tashkent University of Information Technologies, Samarkand Branch",
+      logo: require("./assets/images/tatu.jpg"),
+      subHeader: "Master of Science in Information security",
+      duration: "September 2025 - May 2027 (in progress)",
+      // desc: "Participated in the research of XXX and published 3 papers.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
     {
       schoolName: "Tashkent University of Information Technologies",
       logo: require("./assets/images/tatu.jpg"),
@@ -181,11 +201,25 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    {
+      {
       role: "Backen developer",
+      company: "Kodey",
+      companylogo: require("./assets/images/kodey.jpg"),
+      date: "June 2025 – Present",
+      // desc: "• Designed and deployed  production-grade FastAPI microservices using Docker + Docker Compose; reduced deployment time from 2 hours to <10 minutes via GitHub Actions pipelines.  \
+      //         • Automated database migrations and rollback scripts with Alembic and Bash, eliminating manual errors.  \
+      //         • Currently leading migration of flagship service to Kubernetes (EKS/GKE); authored Helm charts and CI/CD workflows.",
+      descBullets: [
+        "Designed and deployed  production-grade FastAPI microservices using Docker + Docker Compose; reduced deployment time from 2 hours to <10 minutes via GitHub Actions pipelines.",
+        "Automated database migrations and rollback scripts with Alembic and Bash, eliminating manual errors.",
+        "Currently leading migration of flagship service to Kubernetes (EKS/GKE); authored Helm charts and CI/CD workflows."
+      ]
+    },
+    {
+      role: "Backend developer",
       company: "IT Club",
       companylogo: require("./assets/images/itclub.jpg"),
-      date: "June 2023 – November 2024",
+      date: "June 2023 – December 2024",
       desc: "Developed and maintained RESTful APIs using FastAPI and PostgreSQL for an ERP platform to help directors and product managers efficiently manage resources and generate reports in flexible Excel formats.\
       Built an e-commerce platform with backend services that support product management, order tracking, Stripe payment integration, and an admin dashboard.",
       descBullets: [
@@ -215,19 +249,40 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
-const bigProjects = {
+const bigProjects = {       
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
+      {
+      image: require("./assets/images/eastquest.png"),
+      projectName: "EastQuest",
+      projectDesc: "EastQuest is an innovative tourism application that\
+       transforms historical exploration into an engaging, gamified\
+        adventure. Designed for cultural enthusiasts and adventure-seeking\
+         tourists, the app seamlessly blends real-world historical discovery\
+          with interactive quest-based gameplay",
+
+      footerLink: [
+        {
+          name: "Visit GitHub",
+          url: "https://github.com/MrShokh4346/EastQuestBackend"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
     {
       image: require("./assets/images/heartly.jpeg"),
       projectName: "Heartly",
-      projectDesc: "An ERP system is a type of software used by organizations to manage and integrate core business processes—such as  procurement and product management—into a single unified system. It helps improve efficiency, data accuracy, and decision-making by providing a centralized view of business operations.",
+      projectDesc: "An ERP system is a type of software used by \
+      organizations to manage and integrate core business processes—such\
+       as  procurement and product management—into a single unified system.\
+        It helps improve efficiency, data accuracy, and decision-making by\
+         providing a centralized view of business operations.",
       footerLink: [
         {
           name: "Visit GitHub",
