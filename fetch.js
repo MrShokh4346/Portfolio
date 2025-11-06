@@ -9,7 +9,6 @@ const USE_GITHUB_DATA = process.env.USE_GITHUB_DATA;
 // const MEDIUM_USERNAME = process.env.MEDIUM_USERNAME;
 const MEDIUM_USERNAME = null;
 
-
 const ERR = {
   noUserName:
     "Github Username was found to be undefined. Please set all relevant environment variables.",

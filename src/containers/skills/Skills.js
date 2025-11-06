@@ -6,7 +6,7 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
-import { Icon } from '@iconify/react';
+import {Icon} from "@iconify/react";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);

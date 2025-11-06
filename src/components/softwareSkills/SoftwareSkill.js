@@ -20,8 +20,6 @@
 //             );
 //           })}
 
-
-
 //         </ul>
 //       </div>
 //     </div>
@@ -30,9 +28,9 @@
 
 // SoftwareSkill.jsx
 import React from "react";
-import { Icon } from "@iconify/react";
+import {Icon} from "@iconify/react";
 import "./SoftwareSkill.scss";
-import { skillsSection } from "../../portfolio";
+import {skillsSection} from "../../portfolio";
 
 export default function SoftwareSkill() {
   return (
@@ -42,7 +40,7 @@ export default function SoftwareSkill() {
           {skillsSection.softwareSkills.map((skill, i) => {
             const iconStyle = {
               fontSize: "2.5rem",
-              ...skill.style, // <-- merges your custom color
+              ...skill.style // <-- merges your custom color
             };
 
             return (
@@ -63,7 +61,7 @@ export default function SoftwareSkill() {
                     style={{
                       ...iconStyle,
                       width: "2.5rem",
-                      height: "2.5rem",
+                      height: "2.5rem"
                     }}
                   />
                 )}

@@ -54,11 +54,21 @@ const skillsSection = {
   title: "What I do",
   subTitle: "DevOps Engineer transitioning from Python Backend Development",
   skills: [
-    emoji("⚡ Develop highly interactive and responsive application interfaces for web and mobile applications"),
-    emoji("⚡ Build Progressive Web Applications (PWAs) using both traditional and Single Page Application (SPA) stacks"),
-    emoji("⚡ Integrate third-party services such as AWS, Hetzner and DigitalOcean"),
-    emoji("⚡ Design and deploy  production-grade microservices using Docker + Docker Compose; reduced deployment time from 2 hours to <10 minutes via GitHub Actions pipelines"),
-    emoji("⚡ Manage full lifecycle: from requirements → code → CI/CD → production")
+    emoji(
+      "⚡ Develop highly interactive and responsive application interfaces for web and mobile applications"
+    ),
+    emoji(
+      "⚡ Build Progressive Web Applications (PWAs) using both traditional and Single Page Application (SPA) stacks"
+    ),
+    emoji(
+      "⚡ Integrate third-party services such as AWS, Hetzner and DigitalOcean"
+    ),
+    emoji(
+      "⚡ Design and deploy  production-grade microservices using Docker + Docker Compose; reduced deployment time from 2 hours to <10 minutes via GitHub Actions pipelines"
+    ),
+    emoji(
+      "⚡ Manage full lifecycle: from requirements → code → CI/CD → production"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -69,35 +79,35 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database",
-      style: { color: "#00758f" } // Dark blue
+      style: {color: "#00758f"} // Dark blue
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python",
-      style: { color: "#3776AB" } // Official Python blue
+      style: {color: "#3776AB"} // Official Python blue
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker",
-      style: { color: "#2496ED" } // Docker blue
+      style: {color: "#2496ED"} // Docker blue
     },
 
     // ---- DevOps (Iconify) ----
     {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git-alt",
-      style: { color: "#F05032" } // Git red-orange
+      style: {color: "#F05032"} // Git red-orange
     },
     {
       skillName: "GitHub",
       fontAwesomeClassname: "fab fa-github",
-      style: { color: "#181717" } // GitHub black
+      style: {color: "#181717"} // GitHub black
     },
     {
       skillName: "Kubernetes",
       iconifyClass: "simple-icons:kubernetes",
-      style: { color: "#326CE5" }
-    },
+      style: {color: "#326CE5"}
+    }
     // {
     //   skillName: "Jenkins",
     //   iconifyClass: "simple-icons:jenkins",
@@ -143,10 +153,11 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Tashkent University of Information Technologies, Samarkand Branch",
+      schoolName:
+        "Tashkent University of Information Technologies, Samarkand Branch",
       logo: require("./assets/images/tatu.jpg"),
       subHeader: "Master of Science in Information security",
-      duration: "September 2025 - May 2027 (in progress)",
+      duration: "September 2025 - May 2027 (in progress)"
       // desc: "Participated in the research of XXX and published 3 papers.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -157,13 +168,13 @@ const educationInfo = {
       schoolName: "Tashkent University of Information Technologies",
       logo: require("./assets/images/tatu.jpg"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2021 - May 2025",
+      duration: "September 2021 - May 2025"
       // desc: "Participated in the research of XXX and published 3 papers.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
-    },
+    }
     // {
     //   schoolName: "Stanford University",
     //   logo: require("./assets/images/stanfordLogo.png"),
@@ -201,7 +212,7 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-      {
+    {
       role: "Backen developer",
       company: "Kodey",
       companylogo: require("./assets/images/kodey.jpg"),
@@ -226,7 +237,7 @@ const workExperiences = {
         "Achieved 80% growth for backend development using technical skills.",
         "Developed a number of projects."
       ]
-    },
+    }
     // {
     //   role: "Front-End Developer",
     //   company: "Quora",
@@ -254,14 +265,15 @@ const openSource = {
 
 // Some big projects you have worked on
 
-const bigProjects = {       
+const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
-      {
+    {
       image: require("./assets/images/eastquest.png"),
       projectName: "EastQuest",
-      projectDesc: "EastQuest is an innovative tourism application that\
+      projectDesc:
+        "EastQuest is an innovative tourism application that\
        transforms historical exploration into an engaging, gamified\
         adventure. Designed for cultural enthusiasts and adventure-seeking\
          tourists, the app seamlessly blends real-world historical discovery\
@@ -278,7 +290,8 @@ const bigProjects = {
     {
       image: require("./assets/images/heartly.jpeg"),
       projectName: "Heartly",
-      projectDesc: "An ERP system is a type of software used by \
+      projectDesc:
+        "An ERP system is a type of software used by \
       organizations to manage and integrate core business processes—such\
        as  procurement and product management—into a single unified system.\
         It helps improve efficiency, data accuracy, and decision-making by\
@@ -294,7 +307,8 @@ const bigProjects = {
     {
       image: require("./assets/images/alfastroy.png"),
       projectName: "Alfa Stroy",
-      projectDesc: "Alfastroy ERP System Construction Materials Management Designed and developed a custom ERP platform for Alfastroy, a factory producing aluminum composite panels. This system streamlined resource management for directors and product managers, enabling real-time tracking of production, employee performance, and inventory.",
+      projectDesc:
+        "Alfastroy ERP System Construction Materials Management Designed and developed a custom ERP platform for Alfastroy, a factory producing aluminum composite panels. This system streamlined resource management for directors and product managers, enabling real-time tracking of production, employee performance, and inventory.",
       footerLink: [
         {
           name: "Visit GitHub",

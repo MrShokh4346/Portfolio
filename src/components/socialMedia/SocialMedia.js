@@ -140,16 +140,16 @@ export default function socialMedia() {
         </a>
       ) : null} */}
       {socialMediaLinks.telegram ? (
-          <a
-            href={socialMediaLinks.telegram}
-            className="icon-button telegram"
-            // target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-telegram-plane"></i>
-            <span></span>
-          </a>
-        ) : null}
+        <a
+          href={socialMediaLinks.telegram}
+          className="icon-button telegram"
+          // target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-telegram-plane"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }
